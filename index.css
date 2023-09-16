@@ -1,0 +1,18 @@
+p {
+    padding: 5px;
+    line-height: 40px;
+    color: white;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+.paragraph-container {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0.5em;
+    background-color: #3a443f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
