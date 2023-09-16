@@ -57,17 +57,18 @@ const bionicReading = (text) => {
   }
 
 
+
 const main = async () => {
 setTimeout(async () => {
     const websiteType = detectWebsiteType();
     
-
     if (websiteType !== "unknown") {
         console.log(document.body.innerText)
         const summarizedText = await summarizeText(window.location.href);
-        console.log(summarizeText)
+        console.log(summarizedText)
         const bionicText = bionicReading(summarizedText.sm_api_content);
-        document.body.innerHTML = `<p>${bionicText}</p>`;
+		// document.body.innerHTML = `<p>${bionicText}</p>`;
+		document.getElementById('paragraph').appendChild(bionicText); 
     }
 },2000 )
 }

@@ -16,3 +16,24 @@ body {
     background-color: #3a443f;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.title-container {
+    flex: 1;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 0.5em;
+    background-color: #3a443f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-size: 24px
+}
+
+.title-container:hover{
+    transform: scale(1.005);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.paragraph-container:hover{
+    transform: scale(1.005);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
