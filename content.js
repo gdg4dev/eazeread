@@ -57,11 +57,12 @@ const bionicReading = (text) => {
   }
 
 
+let paragraph = document.getElementById('paragraph');
+
 const main = async () => {
 setTimeout(async () => {
     const websiteType = detectWebsiteType();
-    let paragraph = document.getElementById("paragraph")
-
+    
     if (websiteType !== "unknown") {
         console.log(document.body.innerText)
         const summarizedText = await summarizeText(window.location.href);
