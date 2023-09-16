@@ -60,14 +60,14 @@ const bionicReading = (text) => {
 const main = async () => {
 setTimeout(async () => {
     const websiteType = detectWebsiteType();
-    
+    let paragraph = document.getElementById('paragraph')
 
     if (websiteType !== "unknown") {
         console.log(document.body.innerText)
         const summarizedText = await summarizeText(window.location.href);
         console.log(summarizeText)
         const bionicText = bionicReading(summarizedText.sm_api_content);
-        document.body.innerHTML = `<p>${bionicText}</p>`;
+        paragraph.innerHTML = `<p>${bionicText}</p>`;
     }
 },2000 )
 }
