@@ -60,7 +60,7 @@ const bionicReading = (text) => {
 const main = async () => {
 setTimeout(async () => {
     const websiteType = detectWebsiteType();
-    let paragraph = document.getElementById('paragraph')
+    let paragraph = document.getElementById("paragraph")
 
     if (websiteType !== "unknown") {
         console.log(document.body.innerText)
