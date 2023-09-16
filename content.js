@@ -67,7 +67,8 @@ setTimeout(async () => {
         const summarizedText = await summarizeText(window.location.href);
         console.log(summarizedText)
         const bionicText = bionicReading(summarizedText.sm_api_content);
-		document.body.innerHTML = `<p>${bionicText}</p>`;
+		// document.body.innerHTML = `<p>${bionicText}</p>`;
+		document.getElementById('paragraph').appendChild(bionicText); 
     }
 },2000 )
 }
