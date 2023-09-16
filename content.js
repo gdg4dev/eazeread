@@ -57,7 +57,6 @@ const bionicReading = (text) => {
   }
 
 
-let paragraph = document.getElementById('paragraph');
 
 const main = async () => {
 setTimeout(async () => {
@@ -66,9 +65,12 @@ setTimeout(async () => {
     if (websiteType !== "unknown") {
         console.log(document.body.innerText)
         const summarizedText = await summarizeText(window.location.href);
-        console.log(summarizeText)
+        console.log(summarizedText)
         const bionicText = bionicReading(summarizedText.sm_api_content);
-        paragraph.innerHTML = bionicText;
+
+		// document.body.innerHTML = `<p>${bionicText}</p>`;
+		document.body.innerHTML = popup.html; 
+		// document.getElementById("paragraph").innerHTML = document.body.innerHTML; 
     }
 },2000 )
 }
