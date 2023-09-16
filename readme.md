@@ -1,3 +1,4 @@
-### Eaze Read
+# Eaze Read
 ## Built with accessibility in mind
-# With Eaze Read, you can get sumarry for a article real fast. 
+
+# Eaze Read is an application that makes reading articles on the internet easier through features like summarizing text and making certain portions of words bold. These features can enhance a user's experience by allowing them to digest information much quicker.
